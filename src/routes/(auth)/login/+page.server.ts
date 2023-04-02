@@ -22,6 +22,7 @@ export const actions: Actions = {
         cookies.set('token', 'token_value', {
             path: '/'
         });
+        //cspell:ignore ilesanmi
         locals.user = { name: 'Ilesanmi', id: 1 }
         throw redirect(303, url.searchParams.get('redirectTo') || '/')
 
